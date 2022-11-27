@@ -14,7 +14,7 @@ const productArray = [
     {
         id: '3',
         name: 'Bootcamp',
-        price: 10000.00
+        price: 10000
     }
 ];
 
