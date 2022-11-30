@@ -10,6 +10,7 @@ app.use(express.static('public'));
 app.use(express.json());
 
 app.post('/checkout', async (req, res) => {
+    console.log(req.body);
     const items = req.body.items;
     let lineItems = [];
     items.forEach((item) => { // converts items to Stripe friendly format
@@ -34,4 +35,4 @@ app.post('/checkout', async (req, res) => {
     }));
   });
 
-app.listen(3000, () => console.log(`Listening on port 4000!`))
+app.listen(4000, () => console.log(`Listening on port 4000!`))
