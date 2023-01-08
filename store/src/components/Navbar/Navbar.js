@@ -11,7 +11,7 @@ function NavComponent() {
 
     // checkout function for checkout button w/ POST route.
     const checkout = async () => {
-        await fetch(`http://localhost:3000/checkout`, { // this address will need to change
+        await fetch('http://localhost:4000/checkout', { // this address will need to change
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
